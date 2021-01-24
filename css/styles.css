@@ -13,10 +13,6 @@ body {
     box-sizing: border-box;
 }
 
-a {
-    text-decoration: none;
-}
-
 img{
     display: block;
 }
@@ -79,6 +75,7 @@ p{
     font-size: 26px;
     line-height: 1.2;
     color: var(--title-text-color);
+    text-decoration: none;
 }
 
 .header-logo{
@@ -99,20 +96,19 @@ p{
     line-height: 1.14;
     letter-spacing: 0.02em;
     transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    text-decoration: none;
 }
 
 .contact-list .contact-link{
     display: flex;
     align-items: center;
     color: var(--primary-text-color);
-    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-list .nav-link{
     display: flex;
     align-items: center;
     color: var(--title-text-color);
-    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
 }
 
@@ -128,6 +124,7 @@ p{
 .header-icons{
     fill: var(--primary-text-color);
     margin-right: 10px;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-link:hover .header-icons,
@@ -358,6 +355,7 @@ p{
     justify-content: center;
     height: 44px;
     width: 44px;
+    text-decoration: none;
     background-color: var(--second-text-color);
     border-radius: 50%;
     transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -398,6 +396,7 @@ p{
     display: flex;
     align-items: center;
     justify-content: center;
+    text-decoration: none;
     height: 90px;
     border-radius: 4px;
     border: 1px solid var(--fill-color-icons);
@@ -438,6 +437,7 @@ footer{
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
+    text-decoration: none;
 }
 
 .footer-address{
@@ -471,6 +471,7 @@ footer{
     font-size: 14px;
     line-height: 1.71px;
     letter-spacing: 0.03em;
+    text-decoration: none;
 }
 
 .works-header, .team-header {
@@ -483,6 +484,7 @@ footer{
 .footer-widget{
     margin-right: 30px;
     width: 270px;
+    position: relative;
 }
 
 
@@ -492,6 +494,29 @@ footer{
 
 .footer-icons{
     fill: var(--second-text-color);
+}
+
+.subscribe{
+    position: absolute;
+    width: 358px;
+    height: 50px;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background:#2F303A;
+    padding-left: 16px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: var(--second-text-color);
+}
+
+.send-icon{
+    margin-left: 10px;
 }
 
 /*Портфолио*/
@@ -523,6 +548,7 @@ footer{
     border: 1px solid #EEEEEE;
     margin-top: 30px;
     margin-left: 30px;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .main-port-wrap{
@@ -543,6 +569,7 @@ footer{
     opacity: 0;
     transition: opacity 250ms, transform 250ms;
     transform: translateY(100%);
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .description-text{
@@ -552,6 +579,10 @@ footer{
     letter-spacing: 0.03em;
 
     color: #FFFFFF;
+}
+
+.main-port-link{
+    text-decoration: none;
 }
 
 .main-port-link:hover .description-content,
@@ -608,7 +639,8 @@ button:focus{
     border: 0;
     padding: 10px 32px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;   
+    border-radius: 4px;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-slice{
@@ -626,11 +658,30 @@ button:focus{
     padding: 6px 22px;
     border-radius: 4px;
     margin-left: 8px;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-slice:hover,
 .button-slice:focus{
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.button-subscribe{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    margin-left: 370px;
+    width: 200px;
+    background-color: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    color: var(--second-text-color);
 }
 
 
@@ -658,11 +709,11 @@ button:focus{
     left: 50%;
     transform: translate(-50%, -50%);
     width: 528px;
-    height: 581px;
     background-color: var(--second-text-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     transition: all 250ms linear;
+    padding: 40px;
 }
 
 .close-button{
@@ -672,6 +723,181 @@ button:focus{
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background-color: var(--second-text-color);
+    background: var(--second-text-color);
     border: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-button:hover,
+.close-button:focus{
+    background: var(--second-text-color);
+}
+
+.close-button:hover .modal-close-button-icon,
+.close-button:focus .modal-close-button-icon{
+    fill: var(--link-text-color);
+    background: var(--second-text-color);
+}
+
+.modal-form{
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.modal-text{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 12px;
+    color: var(--title-text-color);
+}
+
+.modal-field{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.67;
+    letter-spacing: 0.01em;
+    color: var(--primary-text-color);
+}
+
+.modal-field:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.modal-wrapper{
+    display: block;
+    position: relative;
+    margin-top: 4px;
+}
+
+.modal-input{
+    display: block;
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+    padding-left: 42px;
+
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-icon{
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    fill: var(--title-text-color);
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-input:focus{
+    outline: none;
+    border: 1px solid var(--link-text-color);
+}
+
+.modal-input:focus+ .modal-icon{
+    fill: var(--link-text-color);
+}
+
+.modal-comment{
+    display: block;
+    width: 100%;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 12px 16px;
+    margin-top: 4px;
+    margin-bottom: 10px;
+    resize: none;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-comment::placeholder{
+    color: rgba(117, 117, 117, 0.5);
+}
+
+.modal-comment:focus{
+    outline: none;
+    border: 1px solid var(--link-text-color);
+}
+
+.modal-checkbox{
+    position: absolute;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-polisy{
+    display: inline-flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    color: var(--primary-text-color);
+}
+
+.modal-polisy::before{
+    margin-left: 12px;
+    margin-right: 8.38px;
+    display: block;
+    content: "";
+    width: 16px;
+    height: 15px;
+    border: 2px solid var(--title-text-color);
+    border-radius: 2px;
+    outline: none;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-checkbox:checked + .modal-polisy::before{
+    border-color: var(--link-text-color); 
+    background-image: url("../images/icon-check.svg");
+    background-position: center;
+}
+
+.polisy-link{
+    margin-left: 4px;
+    color: var(--link-text-color);
+}
+
+.modal-send{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    color: var(--second-text-color);
+
+    width: 200px;
+    height: 50px;
+    background: var(--link-text-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-send:hover,
+.modal-send:focus{
+    background: #188CE8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
 }

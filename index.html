@@ -27,9 +27,9 @@
       </nav>
       <ul class="contact-list">
         <li class="contact-item">
-          <a class="contact-link" href="mailto:info@devstudio.com"><svg class="header-icons" width="16" height="12"><use href="./images/sprait.svg#icon-phone"></use></svg>info@devstudio.com</a></li>
+          <a class="contact-link" href="mailto:info@devstudio.com"><svg class="header-icons" width="16" height="12"><use href="./images/sprait.svg#icon-email"></use></svg>info@devstudio.com</a></li>
         <li class="contact-item">
-          <a class="contact-link" href="tel:+380961111111"><svg class="header-icons" width="10" height="16"><use href="./images/sprait.svg#icon-vector"></use></svg>+38 096 111 11 11</a></li>
+          <a class="contact-link" href="tel:+380961111111"><svg class="header-icons" width="10" height="16"><use href="./images/sprait.svg#icon-telefon"></use></svg>+38 096 111 11 11</a></li>
       </ul>
     </div>
   </header>
@@ -229,13 +229,53 @@
           <li class="networks-item"><a class="networks-link footer-link" href="https://www.linkedin.com/"><svg class="networks-icons footer-icons" width="20" height="20"><use href="./images/sprait.svg#icon-linkedin"></use></svg></a></li>
         </ul>
       </div>
+      <div class="footer-widget">
+        <p class="footer-title">Подпишитесь на рассылку</p>
+        <form>
+          <label>
+            <input class="subscribe" type="text" name="username" placeholder="E-mail">
+          </label>
+          <button class="button-subscribe" type="submit">Подписаться<img class="send-icon" src="./images/send.svg" alt="subscribe-icon" width="24" height="24"></button>
+        </form>
+      </div>
     </div>
   </footer>
 
   <!--Модальное окно-->
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
-      <button type="button" class="close-button" data-modal-close>&#10006;</button>
+      <button type="button" class="close-button" data-modal-close> <svg class="modal-close-button-icon" width="11" height="11"><use href="./images/sprait.svg#icon-close"></use></svg></button>
+      <form action="#" class="modal-form">
+        <p class="modal-text">Оставьте свои данные, мы вам перезвоним</p>
+        <label class="modal-field">
+          Имя
+          <span class="modal-wrapper">
+            <input type="text" name="user-name" class="modal-input" required>
+            <svg class="modal-icon" width="12" height="12"><use href="./images/sprait.svg#icon-man"></use></svg>
+          </span>
+        </label>
+        <label class="modal-field">
+          Телефон
+            <span class="modal-wrapper">
+              <input type="tel" name="user-phone" class="modal-input" required>
+              <svg class="modal-icon" width="13" height="13"><use href="./images/sprait.svg#icon-phone"></use></svg>
+            </span>
+        </label>
+        <label class="modal-field">
+          Почта
+            <span class="modal-wrapper">
+              <input type="email" name="user-email" class="modal-input" required>
+              <svg class="modal-icon" width="15" height="12"><use href="./images/sprait.svg#icon-masseg"></use></svg>
+            </span>
+        </label>          
+        <label class="modal-field">
+          Комментарий
+          <textarea name="user-comment" class="modal-comment" placeholder="Введите текст"></textarea>
+        </label>
+        <input id="polisy" type="checkbox" value="polisy-accept" class="modal-checkbox is-hidden">
+        <label for="polisy" class="modal-polisy">Соглашаюсь с рассылкой и принимаю<a href="#" class="polisy-link">Условия договора</a></label>
+        <button class="modal-send" type="submit">Отправить</button>
+      </form>
     </div>
   </div>
 
