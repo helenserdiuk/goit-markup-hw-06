@@ -582,6 +582,7 @@ footer{
 }
 
 .main-port-link{
+    display: block;
     text-decoration: none;
 }
 
@@ -774,7 +775,6 @@ button:focus{
 .modal-wrapper{
     display: block;
     position: relative;
-    margin-top: 4px;
 }
 
 .modal-input{
@@ -821,7 +821,6 @@ button:focus{
     box-sizing: border-box;
     border-radius: 4px;
     padding: 12px 16px;
-    margin-top: 4px;
     margin-bottom: 10px;
     resize: none;
 
